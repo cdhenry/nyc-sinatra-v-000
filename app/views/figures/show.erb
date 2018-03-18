@@ -1,13 +1,13 @@
-<h2>Figure: <%=@figures.name%></h2>
+<h2>Figure: <%=@figure.name%></h2>
 <h2>Titles(s): </h2>
 <ul>
-  <%@figures.titles.each do |title|%>
+  <%@figure.titles.each do |title|%>
     <li><h3><%=title.name%></h3></li>
   <%end%>
 </ul>
 <h2>Landmark(s): </h2>
 <ul>
-  <%@figures.landmarks.each do |landmark|%>
+  <%@figure.landmarks.each do |landmark|%>
     <li><h3><a href="/landmarks/<%=landmark.id%>"><%=landmark.name%></a></h3></li>
   <%end%>
 </ul>
