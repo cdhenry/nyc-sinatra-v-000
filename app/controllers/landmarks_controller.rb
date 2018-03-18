@@ -1,5 +1,5 @@
 class LandmarksController < ApplicationController
-  
+
   get '/landmarks' do
 
   end
@@ -13,7 +13,7 @@ class LandmarksController < ApplicationController
   end
 
   get '/figures/:id' do
-    erb :'figures/show'
+    erb :'landmarks/show'
   end
 
   get '/landmarks/:id/edit' do
