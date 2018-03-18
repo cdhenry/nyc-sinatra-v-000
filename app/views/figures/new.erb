@@ -1,7 +1,7 @@
 <form action="/figures" method="post">
   <label>Name: <input type="text" name="figure[name]"></label>
   <br><br>
-  
+
   <label>Choose an existing Title:</label>
   <%Title.all.each do |title|%>
     <input type="checkbox" name="figure[title_ids][]" id="<%=title.id%>" value="<%=title.id%>"><%=title.name%></input>
