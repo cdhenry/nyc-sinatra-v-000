@@ -15,7 +15,7 @@
 
   <h3>Choose an existing Landmark:</h3>
   <%Landmark.all.each do |landmark|%>
-    <input type="checkbox" name="figure[landmark_ids][]" id="landmark_<%=landmark.id%>" value="<%=landmark.id%>"><%=landmark.name%></input>
+    <input type="checkbox" name="figure[landmark_ids][]" id="landmark_<%=landmark.id%>" value="<%=landmark.id%>" <%='checked' if @figure.landmark_ids.include?(landmark.id) %>><%=landmark.name%></input>
   <%end%>
   <br></br>
   <label>and/or, create a new Landmark:</label>
