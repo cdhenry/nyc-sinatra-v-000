@@ -1,9 +1,9 @@
 <form action="/figures" method="post">
-  <h3>Name: <input type="text" name="figure[name]"></h3>
-  <h3>Artist Name: <input type="text" name="artist" id="Artist Name"></h3>
+  <label>Name: <input type="text" name="figure[name]"></label>
+  <label>Title: <input type="text" name="artist" id="Artist Name"></h3>
   <h3>Choose an existing Genre:</h3>
-  <%Genre.all.each do |genre|%>
-    <input type="checkbox" name="genre_ids[]" id="<%=genre.name%>" value="<%=genre.id%>"><%=genre.name%></input>
+  <%Title.all.each do |title|%>
+    <input type="checkbox" name="figure[title_ids][]" id="<%=genre.name%>" value="<%=genre.id%>"><%=genre.name%></input>
   <%end%>
 
   <br></br>
