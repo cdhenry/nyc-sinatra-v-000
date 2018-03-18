@@ -11,7 +11,7 @@ class LandmarksController < ApplicationController
 
   end
 
-  get '/figures/:id/edit' do
+  get '/landmarks/:id/edit' do
 
   end
 end
