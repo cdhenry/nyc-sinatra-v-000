@@ -8,8 +8,12 @@ class FiguresController < ApplicationController
     erb :'figures/new'
   end
 
-  get '/figures/:id' do
+  post '/figures' do
+    redirect to "/figures/#{@figure.id}"
+  end
 
+  get '/figures/:id' do
+    
   end
 
   get '/figures/:id/edit' do
