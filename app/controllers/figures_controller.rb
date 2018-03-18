@@ -17,6 +17,10 @@ class FiguresController < ApplicationController
   end
 
   get '/figures/:id/edit' do
+    erb :'figures/edit'
+  end
 
+  patch '/figures/:id' do
+    redirect to "/figures/#{@figure.id}"
   end
 end
