@@ -1,3 +1,3 @@
 class Figure < ActiveRecord::Base
-  has many :landmarks
+  has_many :landmarks
 end
