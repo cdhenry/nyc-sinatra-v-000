@@ -9,7 +9,7 @@
   <br></br>
   <label>and/or, create a new Title:</label>
   <input  type="text" name="title[name]"></input>
-<br></br>
+  <br></br>
   <label>Choose an existing Landmark:</label>
   <%Landmark.all.each do |landmark|%>
     <input type="checkbox" name="figure[landmark_ids][]" id="<%=landmark.id%>" value="<%=landmark.id%>"><%=landmark.name%></input>
