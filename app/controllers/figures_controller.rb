@@ -11,11 +11,13 @@ class FiguresController < ApplicationController
 
   post '/figures' do
     @figure = Figure.create(params[:figure])
-     if !params["pet"]["name"].empty?
-       @owner.pets << Pet.create(name: params["pet"]["name"])
-     end
+    if !params["title"]["name"].empty?
+     @figure.titles << Title.create(name: params["title"]["name"])
+    end
+    if !params["landmark"]["name"].empty?
+      @figure.landmarks << Landmark.create(name: params["landmark"]["name"])
      @owner.save
-  
+
     redirect to "/figures/#{@figure.id}"
   end
 
