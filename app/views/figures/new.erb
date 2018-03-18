@@ -10,7 +10,7 @@
   <input  type="text" name="title[name]"></input>
 
   <label>Choose an existing Landmark:</label>
-  <%Landmark.all.each do |title|%>
+  <%Landmark.all.each do |landmark|%>
     <input type="checkbox" name="figure[landmark_ids][]" id="<%=landmark.id%>" value="<%=landmark.id%>"><%=landmark.name%></input>
   <%end%>
   <br></br>
