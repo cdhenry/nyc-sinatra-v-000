@@ -8,19 +8,19 @@ class LandmarksController < ApplicationController
     erb :'landmarks/new'
   end
 
-  post '/figures' do
-    redirect to "/figures/#{@figure.id}"
+  post '/landmarks' do
+    redirect to "/landmarks/#{@landmark.id}"
   end
 
   get '/figures/:id' do
     erb :'figures/show'
   end
 
-  get '/figures/:id/edit' do
-    erb :'figures/edit'
+  get '/landmarks/:id/edit' do
+    erb :'landmarks/edit'
   end
 
-  patch '/figures/:id' do
-    redirect to "/figures/#{@figure.id}"
+  patch '/landmarks/:id' do
+    redirect to "/landmarks/#{@landmark.id}"
   end
 end
