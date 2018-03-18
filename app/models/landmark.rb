@@ -1,3 +1,3 @@
 class Landmark < ActiveRecord::Base
-  belongs to :figure
+  belongs_to :figure
 end
