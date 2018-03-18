@@ -1,3 +1,4 @@
 class FigureTitle < ActiveRecord::Base
-  belongs to
+  belongs to :figure
+  belongs to :title
 end
