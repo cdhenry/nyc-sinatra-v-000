@@ -3,7 +3,7 @@
   <label>Name: <input type="text" name="figure[name]"></label>
   <br></br>
 
-  <h3>Choose an existing Title:</h3><br>
+  <h3>Choose an existing Title:</h3>
   <%Title.all.each do |title|%>
     <input type="checkbox" name="figure[title_ids][]" id="<%=title.id%>" value="<%=title.id%>"><%=title.name%></input>
   <%end%>
@@ -12,7 +12,7 @@
   <input  type="text" name="title[name]"></input>
   <br></br>
 
-  <h3>Choose an existing Landmark:</h3><br>
+  <h3>Choose an existing Landmark:</h3>
   <%Landmark.all.each do |landmark|%>
     <input type="checkbox" name="figure[landmark_ids][]" id="<%=landmark.id%>" value="<%=landmark.id%>"><%=landmark.name%></input>
   <%end%>
